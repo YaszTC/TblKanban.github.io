@@ -1,3 +1,10 @@
+const randomVersion = Math.floor(Math.random() * 1000);
+const link = document.getElementById('estilos-css');
+
+// Agregar el número aleatorio como parámetro de consulta al enlace del archivo CSS
+link.href = `css/estilos.css?v=${randomVersion}`;
+
+
 const tarea = {
     id: "",
     nombre: "",
