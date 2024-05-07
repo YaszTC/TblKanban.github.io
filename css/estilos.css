@@ -115,7 +115,7 @@ body {
 }
 
 .btn-crear{
-    width: fit-content;
+    width: 40%;
     text-align: center;
     background: #96EB88;
     color: #282828;
@@ -133,7 +133,7 @@ body {
     box-shadow: 1px 1px 1px 4px #ffffff1a ;
 }
 .btn-editar{
-    width: fit-content;
+    width: 40%;
     text-align: center;
     background: #889DEB;
     color: #282828;
@@ -151,7 +151,7 @@ body {
     box-shadow: 1px 1px 1px 4px #ffffff1a ;
 }
 .btn-borrar{
-     width: fit-content;
+     width: 40%;
     text-align: center;
     background: #F03F3F;
     color: #e4e4e4;
