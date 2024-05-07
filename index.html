@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Kanban</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="tablero-head">
+            <strong class="tablero-head-title">Tablero Kanban</strong>
+        </div>
+
+        <div class="tablero-slots">
+            <div class="tablero-bloque tablero-form">
+                <strong class="tablero-form-title">Tarea</strong>
+                <div class="container-inputs">
+                    <strong class="strong-input">Titulo Tarea:</strong>
+                    <input type="text" id="tarea-nombre" class="input-text">
+
+                    <strong class="strong-input">Descripcion Tarea:</strong>
+                    <textarea name="" rows="4" id="tarea-descripcion" class="textarea-text"></textarea>
+
+                    <strong class="strong-input">Responsable Tarea:</strong>
+                    <input type="text" id="tarea-responsable" class="input-text">
+                </div>
+
+                <input type="text" class="btn-crear" type="submit" id="btn-crear-editar" value="Crear Tarea"
+                    onclick="crearTarea(event)">
+
+            </div>
+            <div class="tablero-bloque" id="pendientes" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>PENDIENTES</strong>
+            </div>
+            <div class="tablero-bloque" id="procesos" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>EN PROCESO</strong>
+            </div>
+            <div class="tablero-bloque" id="completados" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>COMPLETADOS</strong>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+
+</html>

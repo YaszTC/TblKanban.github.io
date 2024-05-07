@@ -1,0 +1,192 @@
+@font-face {
+    font-family: TSLigera;
+    src: url(../fonts/Ligera.otf);
+}
+@font-face {
+    font-family: TSNormal;
+    src: url(../fonts/Normal.otf);
+}
+@font-face {
+    font-family: TSGruesa;
+    src: url(../fonts/Gruesa.otf);
+}
+@font-face {
+    font-family: TSEGrusa;
+    src: url(../fonts/ExtraGruesa.otf);
+}
+
+
+:root{
+    --TSLigera: 'TSLigera', sans-serif;
+    --TSNormal: 'TSNormal', sans-serif;
+    --TSGruesa: 'TSGruesa', sans-serif;
+    --TSEGrusa: 'TSEGrusa', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--TSLigera);
+}
+
+body {
+    background: #282828;
+}
+
+.container {
+    width: 90%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.tablero-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.tablero-head-title{
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    padding: 0.8rem;
+    border-radius: .3rem;
+    margin: .3rem;
+}
+.tablero-slots{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+.tablero-bloque{
+    text-align: center;
+    padding: .6rem;
+    margin: .5rem;
+    width: 30.5%;
+    height: auto;
+    min-width: 14rem;
+    min-height: 4.5rem;
+    box-shadow: 1px 1px 1px 4px #ffffff1a ;
+    border-radius: .3rem;
+}
+
+.tablero-form{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #C39BD3;
+    align-items: center;
+    font-family: var(--TSLigera);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1px 4px #ffffff1a ;
+}
+.tablero-form-title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e4e4e4;
+    border-radius: .5rem;
+}
+
+.container-inputs{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.input-text{
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin: .3rem; 
+}
+
+.textarea-text{
+    height: auto;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+}
+
+.btn-crear{
+    width: fit-content;
+    text-align: center;
+    background: #96EB88;
+    color: #282828;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem;
+    margin: .3rem;
+    transition: .5s;
+    border: 0;
+    padding: .2rem 2rem;
+}
+.btn-crear:hover{
+    background: #6BB860;
+    transition: .5s;
+    box-shadow: 1px 1px 1px 4px #ffffff1a ;
+}
+.btn-editar{
+    width: fit-content;
+    text-align: center;
+    background: #889DEB;
+    color: #282828;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem;
+    margin: .3rem;
+    transition: .5s;
+    border: 0;
+     padding: .2rem 2rem;
+}
+.btn-editar:hover{
+    background: #6071B8;
+    transition: .5s;
+    box-shadow: 1px 1px 1px 4px #ffffff1a ;
+}
+.btn-borrar{
+     width: fit-content;
+    text-align: center;
+    background: #F03F3F;
+    color: #e4e4e4;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem;
+    margin: .3rem;
+    transition: .5s;
+    border: 0;
+     padding: .2rem 2rem;
+}
+.btn-borrar:hover{
+    background: #B93131;
+    transition: .5s;
+    box-shadow: 1px 1px 1px 4px #ffffff1a ;
+}
+
+#pendientes{
+    height: fit-content;
+    background-color: #FFC300;
+}
+#procesos{
+    height: fit-content;
+    background-color: #2471A3;
+}
+#completados{
+    height: fit-content;
+    background-color: #2ECC71;
+}
+
+.tarea{
+    text-align: start;
+    background-color: #e4e4e4;
+    margin: .2rem 0 .3rem 0;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    padding: .5rem .2rem .5rem .2rem;
+}
